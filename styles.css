@@ -9,10 +9,30 @@
     aspect-ratio: 1;
     width: auto;
     height: auto;
-    margin: 5px;
-    background-color: black;
+    margin: 1px;
+    background-color: red;
 }
 
 .grid-item:hover{
     background-color: gray ;
+}
+
+.button-div {
+    text-align: center;
+}
+
+.input-button {
+    font-size: large;
+    height: 50px;
+    width: 15%;
+    color: aqua;
+    background-color: rgb(41, 39, 39);
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.input-button:hover {
+    background-color: rgb(141, 122, 122);
+    
 }
