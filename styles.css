@@ -1,3 +1,10 @@
+body {
+    background-color: gray;
+    margin: auto;
+    aspect-ratio: 1;
+    height: 800px;
+    width: auto;
+}
 
 
 .flex-container {
@@ -9,20 +16,21 @@
     aspect-ratio: 1;
     width: auto;
     height: auto;
-    margin: 1px;
-    background-color: red;
+    margin: 0.5px;
+    background-color: white;
 }
 
 .grid-item:hover{
-    background-color: gray ;
+    background-color: black ;
 }
 
 .button-div {
-    text-align: center;
+    text-align: left;
+    margin: 5px;
 }
 
 .input-button {
-    font-size: large;
+    font-size: small;
     height: 50px;
     width: 15%;
     color: aqua;

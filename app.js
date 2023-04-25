@@ -1,4 +1,7 @@
 
+// will be refactored later 
+var input = 16;
+
 let buttonDiv = document.createElement("div");
 
 let inputButton = document.createElement("button");
@@ -7,20 +10,23 @@ buttonDiv.className = "button-div";
 
 inputButton.className = "input-button";
 
-inputButton.innerText = "Set square amount";
+inputButton.innerText = "Set square amount "+input+"x"+input;
 
 buttonDiv.appendChild(inputButton);
 
 document.body.appendChild(buttonDiv);
 
-var input = 16;
+
 buildGrid(input);
 
 inputButton.addEventListener("click",()=>{
     removeLastGrid();
+    let oldInput = input;
 
     input = prompt("How many squares each side ?");
-    
+    if(!input){
+        input = oldInput;
+    }
     buildGrid(input);
 })
 
